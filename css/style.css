@@ -1,0 +1,279 @@
+@import url(fonts.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'RalewayRegular';
+}
+
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+nav{
+    background: #0c0c0c;
+    border-bottom: 1px solid #7D737380;
+}
+
+.nav__navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__navigation-mini{
+    display: flex;
+    align-items: center;
+}
+
+.nav__navigation-title{
+    color: white;
+    margin-left: 5px;
+    font-family: 'RobotoRegular';
+}
+
+.ul__list{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    padding: 20px 0;
+}
+
+.ul__list-link{
+    color: white;
+    font-family: 'RobotoRegular';
+    text-align: right;
+    line-height: 19px;
+    transition: 0.5s;
+}
+
+
+.ul__menu{
+    padding: 0;
+    column-gap: 0;
+}
+
+.ul__link{
+    padding: 22px 14px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.ul__link:hover{
+    background: #69CF17BF;
+}
+
+.header{
+    background: url(../img/header.jpg) no-repeat center/cover;
+    height: 100vh;
+}
+
+h1{
+    color: #69CF17;
+    font-size: 72px;
+    line-height: 84px;
+    font-family: 'RalewayBlack';
+    padding: 167px 0 18px;
+}
+
+h3{
+    font-size: 36px;
+    line-height: 17px;
+    color: #69CF17;
+}
+
+
+.header__text{
+    font-size: 18px;
+    line-height: 14px;
+    color: white;
+    padding: 18px 0 30px;
+}
+
+.header__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__box-first{
+    background: #69CF1780;
+    padding: 33px 76px;
+    font-size: 50px;
+    line-height: 25px;
+    text-align: right;
+    color: #FFFFFF;
+    font-family: 'RalewayThin';
+}
+
+.header__box-second{
+    padding: 15px 71px;
+    background: linear-gradient(90deg, #69CF17 0%, #417D11 100%);
+    font-size: 18px;
+    line-height: 21px;
+    text-align: right;
+    border-radius: 6px;
+}
+
+.box{
+    height: 48px;
+    background: black;
+}
+
+.menu{
+    background: #292929;
+    box-shadow: 0px 1px 8px 0px #1111114D;
+}
+
+.menu__ul{
+    display: flex;
+    column-gap: 32px;
+    margin-left: 22px;
+}
+
+.menu__ul-link{
+    font-size: 18px;
+    line-height: 24px;
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.menu__ul-link::before{
+    content: " ";
+    width: 0;
+    bottom: 0;
+    background: white;
+    height: 3px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+.menu__ul-link:hover:before{
+    width: 100%;
+}
+
+.main{
+    background: #393636;
+}
+
+.cards__card{
+    max-width: 370px;
+    background: black;
+    color: white;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.cards__card-icons{
+    position: relative;
+}
+
+.cards__card-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #69CF17E5;
+    transition: 0.5s;
+    color: white;
+    transform: rotate(90deg) scale(0.5);
+    opacity: 0;
+}
+
+.cards__card-icon:hover{
+    transform: rotate(0) scale(1);
+    opacity: 1;
+}
+
+
+.cards__card-title{
+    font-size: 19px;
+    line-height: 15px;
+    font-family: 'RalewayBold';
+    padding: 15px 0;
+}
+
+.cards__card-text{
+  font-size: 19px;
+  line-height: 25px;
+}
+
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 15px;
+    gap: 30px;
+}
+
+.block{
+    background: white;
+}
+
+.block__title{
+    text-align: center;
+    padding: 20px 0;
+    color: #69CF17;
+    font-size: 50px;
+    line-height: 40px;
+    font-family: 'RalewayBold';
+}
+
+.footer{
+    background: linear-gradient(180deg, #000000 0%, rgba(105, 207, 23, 0.5) 100%);
+}
+
+.footer__box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0 81px;
+}
+
+.footer__text{
+    font-size: 20px;
+    line-height: 23px;
+    color: white;
+    font-family: 'RobotoBold';
+    text-align: right;
+}
+
+.footer__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    padding-bottom: 81px;
+}
+
+.footer__block{
+    background: #1A3406;
+}
+
+.footer__block-title{
+    color: white;
+    text-align: center;
+    font-family: 'RobotoRegular';
+    line-height: 19px;
+    padding: 19px 0;
+}
